@@ -140,6 +140,8 @@ var result = util.format(txt, 'Linux', 6);
 console.log(result);
 
 /*
+// npm install formidable
+
 // How to upload the files
 // Create an upload form
 var http = require('http');

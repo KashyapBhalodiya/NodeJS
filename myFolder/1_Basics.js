@@ -121,7 +121,23 @@ console.log(roundTrip);
 
 // global
 
-console.log(console == globla.console);
+console.log(console == global.console);
 console.log(setInterval == global.setInterval);
 console.log(process == global.process);
 
+// * JSON: Javascript Object Notation
+var foo = {
+    a: 1,
+    b: 'String',
+    c: true
+};
+
+// Convert a Javascript object to a string.
+var json = JSON.toString(foo);
+console.log(json);
+console.log(typeof json);
+
+// Convert a JSON string into the javascript object
+var backtoJS = JSON.parse(json);
+console.log(backtoJS);
+console.log(backtoJS.c);
